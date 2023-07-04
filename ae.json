@@ -11,8 +11,8 @@
       "utility",
       "other"
     ],
-    "InternalName": "AeAssist",
-    "AssemblyVersion": "2.0.0.0",
+    "InternalName": "AEAssistLoader",
+    "AssemblyVersion": "1.0.0.0",
     "RepoUrl": "https://github.com/Stunner5102/AEAssisst.git",
     "ApplicableVersion": "any",
     "DalamudApiLevel": 8,
