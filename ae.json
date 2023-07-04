@@ -12,16 +12,16 @@
       "other"
     ],
     "InternalName": "AeAssist",
-    "AssemblyVersion": "1.0.0.0",
+    "AssemblyVersion": "2.0.0.0",
     "RepoUrl": "https://github.com/Stunner5102/AEAssisst.git",
     "ApplicableVersion": "any",
     "DalamudApiLevel": 8,
     "DownloadCount": 0,
     "LastUpdate": 1686496772,
-    "DownloadLinkInstall": "https://github.com/Stunner5102/AEAssisst/blob/main/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/Stunner5102/AEAssisst/blob/main/latest.zip",
-    "DownloadLinkTesting": "https://github.com/Stunner5102/AEAssisst/blob/main/latest.zip",
-    "IconUrl": "https://github.com/Stunner5102/AEAssisst/blob/main/icon/icon.png",
+    "DownloadLinkInstall": "https://raw.githubusercontent.com/Stunner5102/AEAssisst/main/latest.zip",
+    "DownloadLinkUpdate": "https://raw.githubusercontent.com/Stunner5102/AEAssisst/main/latest.zip",
+    "DownloadLinkTesting": "https://raw.githubusercontent.com/Stunner5102/AEAssisst/main/latest.zip",
+    "IconUrl": "https://raw.githubusercontent.com/Stunner5102/AEAssisst/main/icon/icon.png",
     "AcceptsFeedback": true
   }
 ]
