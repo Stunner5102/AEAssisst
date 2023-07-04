@@ -18,10 +18,10 @@
     "DalamudApiLevel": 8,
     "DownloadCount": 0,
     "LastUpdate": 1686496772,
-    "DownloadLinkInstall": "",
-    "DownloadLinkUpdate": "",
-    "DownloadLinkTesting": "",
-    "IconUrl": "",
+    "DownloadLinkInstall": "https://github.com/Stunner5102/AEAssisst/blob/main/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/Stunner5102/AEAssisst/blob/main/latest.zip",
+    "DownloadLinkTesting": "https://github.com/Stunner5102/AEAssisst/blob/main/latest.zip",
+    "IconUrl": "https://github.com/Stunner5102/AEAssisst/blob/main/icon/icon.png",
     "AcceptsFeedback": true
   }
 ]
