@@ -1,0 +1,70 @@
+{
+  "Id": "31e6bd91-3a7f-4efe-adcb-e6d082fcf3bb",
+  "ConfigVersion": 6,
+  "TriggerRoot": {
+    "Childs": [
+      {
+        "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+        "Childs": [
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "延迟[秒]",
+            "Delay": 60.0,
+            "Name": ""
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "Fra.Paladin.Triggers.PLDTriggerActionBlade3, Fra",
+                "DisplayName": "[PLD]悔罪连开关",
+                "Blade3": false
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": ""
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "延迟[秒]",
+            "Delay": 15.0,
+            "Name": ""
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "Fra.Paladin.Triggers.PLDTriggerActionBlade3, Fra",
+                "DisplayName": "[PLD]悔罪连开关",
+                "Blade3": true
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": ""
+          }
+        ],
+        "NodeType": 1,
+        "Enable": true,
+        "DisplayName": "序列",
+        "Name": ""
+      }
+    ],
+    "NodeType": 0,
+    "Enable": true,
+    "DisplayName": "Start",
+    "Name": ""
+  },
+  "Author": "fra",
+  "Name": "pld-test",
+  "TerritoryTypeId": 1,
+  "TargetJob": 19,
+  "ExposedVars": []
+}

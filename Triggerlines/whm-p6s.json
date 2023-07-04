@@ -1,0 +1,421 @@
+{
+  "ConfigVersion": 6,
+  "TriggerRoot": {
+    "Childs": [
+      {
+        "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+        "Childs": [
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 23,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "23秒 用 庇护所"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 3569,
+                  "TargetType": 0
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "23秒 用 庇护所"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 71,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "71秒 用 礼仪之铃"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 25862,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "71秒 用 礼仪之铃"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 120,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "120秒 用 庇护所"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 3569,
+                  "TargetType": 0
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "120秒 用 庇护所"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 121,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "121秒 用 节制"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 16536,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "121秒 用 节制"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 230,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "230秒 用 庇护所"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 3569,
+                  "TargetType": 0
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "230秒 用 庇护所"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 243,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "243秒 用 节制"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 16536,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "243秒 用 节制"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 304,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "304秒 用 礼仪之铃"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 25862,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "304秒 用 礼仪之铃"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 333,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "333秒 用 庇护所"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 3569,
+                  "TargetType": 0
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "333秒 用 庇护所"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 365,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "365秒 用 节制"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 16536,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "365秒 用 节制"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 426,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "426秒 用 庇护所"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 3569,
+                  "TargetType": 0
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "426秒 用 庇护所"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 486,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "486秒 用 节制"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 16536,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "486秒 用 节制"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 497,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "497秒 用 礼仪之铃"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 25862,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "497秒 用 礼仪之铃"
+          }
+        ],
+        "NodeType": 1,
+        "Enable": true,
+        "DisplayName": "序列",
+        "Name": ""
+      }
+    ],
+    "NodeType": 0,
+    "Enable": true,
+    "DisplayName": "Start",
+    "Name": ""
+  },
+  "Author": "fra",
+  "Name": "whm-p6s",
+  "TerritoryTypeId": 1084,
+  "TargetJob": 24,
+  "ExposedVars": []
+}

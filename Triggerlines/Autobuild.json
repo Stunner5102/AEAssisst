@@ -1,0 +1,454 @@
+{
+  "ConfigVersion": 6,
+  "TriggerRoot": {
+    "Childs": [
+      {
+        "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+        "Childs": [
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 120,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "120秒 用 雪仇"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 7535,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "120秒 用 雪仇"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 148,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "148秒 用 圣光幕帘"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 3540,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "148秒 用 圣光幕帘"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 242,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "242秒 用 铁壁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 7531,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "242秒 用 铁壁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 257,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "257秒 用 壁垒"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 22,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "257秒 用 壁垒"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 292,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "292秒 用 武装戍卫"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 7385,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "292秒 用 武装戍卫"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 335,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "335秒 用 雪仇"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 7535,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "335秒 用 雪仇"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 383,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "383秒 用 铁壁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 7531,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "383秒 用 铁壁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 383,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "383秒 用 预警"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 17,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "383秒 用 预警"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 476,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "476秒 用 圣光幕帘"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 3540,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "476秒 用 圣光幕帘"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 519,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "519秒 用 雪仇"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 7535,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "519秒 用 雪仇"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 545,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "545秒 用 武装戍卫"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 7385,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "545秒 用 武装戍卫"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 550,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "550秒 用 铁壁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 7531,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "550秒 用 铁壁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 551,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "551秒 用 预警"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 17,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "551秒 用 预警"
+          }
+        ],
+        "NodeType": 1,
+        "Enable": true,
+        "DisplayName": "序列",
+        "Name": ""
+      }
+    ],
+    "NodeType": 0,
+    "Enable": true,
+    "DisplayName": "Start",
+    "Name": ""
+  },
+  "Author": "fra",
+  "Name": "火天王-骑士",
+  "TerritoryTypeId": 1096,
+  "TargetJob": 19,
+  "ExposedVars": []
+}

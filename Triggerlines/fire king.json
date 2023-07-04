@@ -1,0 +1,265 @@
+{
+  "ConfigVersion": 6,
+  "TriggerRoot": {
+    "Childs": [
+      {
+        "$type": "CombatRoutine.TriggerModel.TriggerParallel, CombatRoutine",
+        "Childs": [
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+            "Childs": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                "NodeType": 2,
+                "Enable": true,
+                "DisplayName": "延迟[秒]",
+                "Delay": 110.0,
+                "Name": "110关爆发"
+              },
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                "TriggerActions": [
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerActionSwitchBurst, CombatRoutine",
+                    "Burst": false,
+                    "DisplayName": "切换爆发"
+                  }
+                ],
+                "NodeType": 2,
+                "Enable": true,
+                "DisplayName": "行为",
+                "Name": "关爆发"
+              },
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+                "CondLogicType": 0,
+                "TriggerConds": [
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerCondEnemyCastSpell, CombatRoutine",
+                    "Strs": null,
+                    "RegexNameOrId": "31998",
+                    "DisplayName": "敌人读条使用技能"
+                  }
+                ],
+                "NodeType": 2,
+                "Enable": true,
+                "DisplayName": "条件",
+                "Name": "读条放散火流"
+              },
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                "TriggerActions": [
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerActionSwitchBurst, CombatRoutine",
+                    "Burst": true,
+                    "DisplayName": "切换爆发"
+                  }
+                ],
+                "NodeType": 2,
+                "Enable": true,
+                "DisplayName": "行为",
+                "Name": "开爆发"
+              }
+            ],
+            "NodeType": 1,
+            "Enable": true,
+            "DisplayName": "序列",
+            "Name": "第一次延后爆发"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+            "Childs": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+                "CondLogicType": 0,
+                "TriggerConds": [
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerCondEnemyInLos, CombatRoutine",
+                    "NameOrId": "15762",
+                    "DisplayName": "敌人出现在视野中"
+                  }
+                ],
+                "NodeType": 2,
+                "Enable": true,
+                "DisplayName": "条件",
+                "Name": "小怪出现"
+              },
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                "TriggerActions": [
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerActionSwitchBurst, CombatRoutine",
+                    "Burst": false,
+                    "DisplayName": "切换爆发"
+                  }
+                ],
+                "NodeType": 2,
+                "Enable": true,
+                "DisplayName": "行为",
+                "Name": "关爆发"
+              }
+            ],
+            "NodeType": 1,
+            "Enable": true,
+            "DisplayName": "序列",
+            "Name": "小怪出现关爆发"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+            "Childs": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+                "CondLogicType": 0,
+                "TriggerConds": [
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerCondEnemyCastSpell, CombatRoutine",
+                    "Strs": null,
+                    "RegexNameOrId": "32006",
+                    "DisplayName": "敌人读条使用技能"
+                  }
+                ],
+                "NodeType": 2,
+                "Enable": true,
+                "DisplayName": "条件",
+                "Name": "读条狂炎"
+              },
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                "TriggerActions": [
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerActionSwitchBurst, CombatRoutine",
+                    "Burst": true,
+                    "DisplayName": "切换爆发"
+                  }
+                ],
+                "NodeType": 2,
+                "Enable": true,
+                "DisplayName": "行为",
+                "Name": "开爆发"
+              }
+            ],
+            "NodeType": 1,
+            "Enable": true,
+            "DisplayName": "序列",
+            "Name": "大伤害读条"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+            "Childs": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+                "CondLogicType": 0,
+                "TriggerConds": [
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerCondEnemyCastSpell, CombatRoutine",
+                    "Strs": null,
+                    "RegexNameOrId": "32023",
+                    "DisplayName": "敌人读条使用技能"
+                  }
+                ],
+                "NodeType": 2,
+                "Enable": true,
+                "DisplayName": "条件",
+                "Name": "烈火赤灭爪"
+              },
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                "NodeType": 2,
+                "Enable": true,
+                "DisplayName": "延迟[秒]",
+                "Delay": 4.0,
+                "Name": "4"
+              },
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                "TriggerActions": [
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                    "SpellConfig": {
+                      "Category": 0,
+                      "SpellId": 16012,
+                      "TargetType": 0
+                    },
+                    "DisplayName": "使用技能"
+                  }
+                ],
+                "NodeType": 2,
+                "Enable": true,
+                "DisplayName": "行为",
+                "Name": "桑巴"
+              }
+            ],
+            "NodeType": 1,
+            "Enable": true,
+            "DisplayName": "序列",
+            "Name": "无脑减伤（回场中一下"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+            "Childs": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+                "CondLogicType": 0,
+                "TriggerConds": [
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerCondEnemyCastSpell, CombatRoutine",
+                    "Strs": null,
+                    "RegexNameOrId": "32024",
+                    "DisplayName": "敌人读条使用技能"
+                  }
+                ],
+                "NodeType": 2,
+                "Enable": true,
+                "DisplayName": "条件",
+                "Name": "烈火赤灭爪"
+              },
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                "NodeType": 2,
+                "Enable": true,
+                "DisplayName": "延迟[秒]",
+                "Delay": 4.0,
+                "Name": "4"
+              },
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                "TriggerActions": [
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                    "SpellConfig": {
+                      "Category": 0,
+                      "SpellId": 16012,
+                      "TargetType": 0
+                    },
+                    "DisplayName": "使用技能"
+                  }
+                ],
+                "NodeType": 2,
+                "Enable": true,
+                "DisplayName": "行为",
+                "Name": "桑巴"
+              }
+            ],
+            "NodeType": 1,
+            "Enable": true,
+            "DisplayName": "序列",
+            "Name": "同上"
+          }
+        ],
+        "NodeType": 1,
+        "Enable": true,
+        "DisplayName": "并行",
+        "Name": ""
+      }
+    ],
+    "NodeType": 0,
+    "Enable": true,
+    "DisplayName": "Start",
+    "Name": ""
+  },
+  "Author": "yuu",
+  "Name": "火天王-舞者",
+  "TerritoryTypeId": 1096,
+  "TargetJob": 38,
+  "ExposedVars": []
+}

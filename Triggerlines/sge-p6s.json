@@ -1,0 +1,1840 @@
+{
+  "ConfigVersion": 6,
+  "TriggerRoot": {
+    "Childs": [
+      {
+        "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+        "Childs": [
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 10,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "10秒 用 坚角清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24298,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "10秒 用 坚角清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 15,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "15秒 用 寄生清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24299,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "15秒 用 寄生清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 28,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "28秒 用 拯救"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24294,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "28秒 用 拯救"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 30,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "30秒 用 白牛清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24303,
+                  "TargetType": 3
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "30秒 用 白牛清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 37,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "37秒 用 输血"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24305,
+                  "TargetType": 3
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "37秒 用 输血"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 45,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "45秒 用 泛输血"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24311,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "45秒 用 泛输血"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 59,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "59秒 用 坚角清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24298,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "59秒 用 坚角清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 60,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "60秒 用 寄生清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24299,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "60秒 用 寄生清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 79,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "79秒 用 自生II"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24302,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "79秒 用 自生II"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 82,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "82秒 用 活化"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24300,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "82秒 用 活化"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 86,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "86秒 用 魂灵风息"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24318,
+                  "TargetType": 0
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "86秒 用 魂灵风息"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 87,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "87秒 用 整体论"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24310,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "87秒 用 整体论"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 116,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "116秒 用 坚角清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24298,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "116秒 用 坚角清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 116,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "116秒 用 寄生清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24299,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "116秒 用 寄生清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 121,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "121秒 用 拯救"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24294,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "121秒 用 拯救"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 131,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "131秒 用 白牛清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24303,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "131秒 用 白牛清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 141,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "141秒 用 自生II"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24302,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "141秒 用 自生II"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 146,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "146秒 用 坚角清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24298,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "146秒 用 坚角清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 156,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "156秒 用 寄生清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24299,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "156秒 用 寄生清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 178,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "178秒 用 坚角清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24298,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "178秒 用 坚角清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 205,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "205秒 用 输血"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24305,
+                  "TargetType": 3
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "205秒 用 输血"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 210,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "210秒 用 泛输血"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24311,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "210秒 用 泛输血"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 213,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "213秒 用 坚角清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24298,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "213秒 用 坚角清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 228,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "228秒 用 自生II"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24302,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "228秒 用 自生II"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 230,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "230秒 用 寄生清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24299,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "230秒 用 寄生清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 237,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "237秒 用 拯救"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24294,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "237秒 用 拯救"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 247,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "247秒 用 坚角清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24298,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "247秒 用 坚角清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 250,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "250秒 用 活化"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24300,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "250秒 用 活化"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 252,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "252秒 用 魂灵风息"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24318,
+                  "TargetType": 0
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "252秒 用 魂灵风息"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 262,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "262秒 用 寄生清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24299,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "262秒 用 寄生清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 279,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "279秒 用 坚角清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24298,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "279秒 用 坚角清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 288,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "288秒 用 自生II"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24302,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "288秒 用 自生II"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 289,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "289秒 用 整体论"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24310,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "289秒 用 整体论"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 309,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "309秒 用 寄生清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24299,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "309秒 用 寄生清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 312,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "312秒 用 白牛清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24303,
+                  "TargetType": 3
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "312秒 用 白牛清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 316,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "316秒 用 坚角清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24298,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "316秒 用 坚角清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 350,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "350秒 用 自生II"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24302,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "350秒 用 自生II"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 351,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "351秒 用 寄生清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24299,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "351秒 用 寄生清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 353,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "353秒 用 泛输血"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24311,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "353秒 用 泛输血"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 358,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "358秒 用 坚角清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24298,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "358秒 用 坚角清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 373,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "373秒 用 输血"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24305,
+                  "TargetType": 3
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "373秒 用 输血"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 376,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "376秒 用 拯救"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24294,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "376秒 用 拯救"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 378,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "378秒 用 活化"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24300,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "378秒 用 活化"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 385,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "385秒 用 魂灵风息"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24318,
+                  "TargetType": 0
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "385秒 用 魂灵风息"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 386,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "386秒 用 寄生清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24299,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "386秒 用 寄生清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 398,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "398秒 用 坚角清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24298,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "398秒 用 坚角清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 415,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "415秒 用 自生II"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24302,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "415秒 用 自生II"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 418,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "418秒 用 寄生清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24299,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "418秒 用 寄生清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 423,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "423秒 用 整体论"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24310,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "423秒 用 整体论"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 442,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "442秒 用 坚角清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24298,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "442秒 用 坚角清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 462,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "462秒 用 白牛清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24303,
+                  "TargetType": 3
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "462秒 用 白牛清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 475,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "475秒 用 拯救"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24294,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "475秒 用 拯救"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 487,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "487秒 用 泛输血"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24311,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "487秒 用 泛输血"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 489,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "489秒 用 坚角清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24298,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "489秒 用 坚角清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+            "CondLogicType": 0,
+            "TriggerConds": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                "Delay": 497,
+                "DisplayName": "战斗开始后多少秒"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "条件",
+            "Name": "497秒 用 寄生清汁"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+            "TriggerActions": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                "SpellConfig": {
+                  "Category": 0,
+                  "SpellId": 24299,
+                  "TargetType": 1
+                },
+                "DisplayName": "使用技能"
+              }
+            ],
+            "NodeType": 2,
+            "Enable": true,
+            "DisplayName": "行为",
+            "Name": "497秒 用 寄生清汁"
+          }
+        ],
+        "NodeType": 1,
+        "Enable": true,
+        "DisplayName": "序列",
+        "Name": ""
+      }
+    ],
+    "NodeType": 0,
+    "Enable": true,
+    "DisplayName": "Start",
+    "Name": ""
+  },
+  "Author": "fra",
+  "Name": "p6s-sge",
+  "TerritoryTypeId": 1084,
+  "TargetJob": 40,
+  "ExposedVars": []
+}

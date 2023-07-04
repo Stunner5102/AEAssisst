@@ -1,0 +1,82 @@
+Lan = "EN"
+# MCH
+"机工" = "MCH"
+
+
+# BRD
+"诗人" = "BRD"
+
+
+# DNC
+"舞者" = "DNC"
+"大于多少打剑舞" = "sword dance greater than "
+"[DNC]优先流星舞" = "[DNC]priority meteorite dance"
+"大舞起手" = "Tech First"
+"华尔兹" = "Waltz"
+"防止溢出" = "Prevent Overflow"
+
+# DRK
+"黑骑" = "DRK"
+"嗜血时间(倒数多少ms嗜血)" = "BloodWeaponTime time (countdown ms blood weapon)"
+"血乱时间(倒数多少ms血乱)" = "DeliriumTime time (countdown ms delirium)"
+"保留蓝量" = "Keep MP"
+"突进开怪" = "Plunge"
+"伤残" = "Unmend"
+"突进开关" = "Plunge switch"
+"腐秽大地" = "Salted Earth"
+
+# GNB
+"枪刃" = "GNB"
+"闪雷弹" = "Lightning Shot"
+"子弹连" = "Continuation"
+"爆发击" = "Burst Strike"
+
+# PLD
+"骑士" = "PLD"
+"突进时间(倒数多少ms突进)" = "lunge time (countdown ms lunge)"
+"舍弃赎罪" = "Abandonment of Atonement"
+"绝欧起手" = "Absolute Europe start"
+
+# RPR
+"镰刀" = "RPR"
+"TP身位(仅供娱乐！)" = "TP position (for entertainment only!)"
+"TP返回时间，越低出错概率越大，根据自身调整" = "TP return time, the lower the probability of error, adjust according to their own"
+
+# RDM
+"赤魔" = "RDM"
+
+# SGE
+"贤者" = "SGE"
+"起手设置" = "Opener setting"
+"常规起手" = "General Opener"
+"贤炮起手" = "Pneuma Opener"
+
+# WHM
+"白魔" = "WHM"
+"允许使用的GCD" = "GCD skills allowed"
+"医济" = "Medica"
+"愈疗" = "Cure"
+"安慰之心" = "AfflatusSolace"
+"允许使用的能力技" = "Ability skills allowed"
+"水流幕" = "Aquaveil"
+"神祝祷" = "Divine Benison"
+"神名" = "Tetragrammaton"
+"法令" = "Assize"
+"神速咏唱" = "Presence of Mind"
+"全大赦" = "Plenary Indulgence"
+"无中生有" = "Thin Air"
+"群抬人数" = "Number of people in the group to use cure"
+"医济血量" = "Medica HP"
+"愈疗血量" = "CureIII HP"
+"狂喜之心血量" = "AfflatusRapture HP"
+"安慰之心血量" = "AfflatusSolace HP"
+"神名血量" = "Tetragrammaton HP"
+"神祝祷血量" = "Divine Benison HP"
+"全大赦血量" = "Plenary Indulgence HP"
+"治疗详细设置" = "Healing detailed settings"
+"GCD治疗" = "GCD healing"
+"能力技治疗" = "Ability skills healing"
+"红花" = "AfflatusMisery"
+"群蓝花" = "AfflatusRapture"
+"再生" = "Regen"
+"拉人" = "Raise"

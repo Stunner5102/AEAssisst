@@ -1,0 +1,33 @@
+Lan = "CN"
+
+"Pull" = "拉"
+"Use Potion" = "使用药水"
+"Stop" = "停止"
+"GCDHeal" = "GCD治疗"
+"Heal" = "治疗"
+"Auto Kardia" = "自动心脏"
+"Use Opener" = "使用开场技能"
+"Cast Eukrasian Diagnosis While Moving" = "移动中使用诊断"
+"Cast Eukrasian Diagnosis On Tanks Only" = "只对坦克使用诊断"
+"AOE Count" = "AOE数量"
+"Dosis MP Threshold" = "Dosis MP阈值"
+"LucidDreaming Threshold" = "清醒阈值"
+"Rhizomata trigger" = "根茎触发"
+
+# Ast
+"Play Cards" = "发牌"
+"Malefic MP Threshold" = "祸星MP阈值"
+"Use Divination" = "使用占卜"
+"Crown Card Percentage" = "王牌百分比"
+"Job Weights" = "职业权重"
+"Job" = "职业"
+"Weight" = "权重"
+
+# DRK
+"Use TBN" = "使用TBN"
+"Use Blood Weapon" = "使用鲜血武器"
+"UseBloodspiller" = "使用血溅"
+"UseQuietus" = "使用血乱"
+"SaveMP" = "节省MP"
+"ReserveOneDash" = "保留一个冲刺"
+

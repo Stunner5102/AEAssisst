@@ -1,0 +1,318 @@
+{
+  "Id": "d8b820f9-5763-4d44-a5fa-83d627ce707b",
+  "ConfigVersion": 6,
+  "TriggerRoot": {
+    "Childs": [
+      {
+        "$type": "CombatRoutine.TriggerModel.TriggerParallel, CombatRoutine",
+        "Childs": [
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+            "Childs": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerParallel, CombatRoutine",
+                "Childs": [
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+                    "Childs": [
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+                        "CondLogicType": 0,
+                        "TriggerConds": [
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerCondAfterBattleStart, CombatRoutine",
+                            "Delay": 120,
+                            "DisplayName": "战斗开始后多少秒"
+                          }
+                        ],
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "条件",
+                        "Name": ""
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                        "TriggerActions": [
+                          {
+                            "$type": "Fra.Paladin.Triggers.PLDTriggerActionBlade3, Fra",
+                            "DisplayName": "[PLD]悔罪连开关",
+                            "Blade3": false
+                          }
+                        ],
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "行为",
+                        "Name": "锁大宝剑"
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                        "TriggerActions": [
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerActionLockSpell, CombatRoutine",
+                            "SpellId": 20,
+                            "Lock": true,
+                            "DisplayName": "锁定技能"
+                          }
+                        ],
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "行为",
+                        "Name": "锁战逃"
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                        "TriggerActions": [
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerActionLockSpell, CombatRoutine",
+                            "SpellId": 3538,
+                            "Lock": true,
+                            "DisplayName": "锁定技能"
+                          }
+                        ],
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "行为",
+                        "Name": "锁沥血"
+                      }
+                    ],
+                    "NodeType": 1,
+                    "Enable": true,
+                    "DisplayName": "序列",
+                    "Name": "末尾关大宝剑"
+                  }
+                ],
+                "NodeType": 1,
+                "Enable": true,
+                "DisplayName": "并行",
+                "Name": ""
+              }
+            ],
+            "NodeType": 1,
+            "Enable": true,
+            "DisplayName": "序列",
+            "Name": "P1"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+            "Childs": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+                "CondLogicType": 0,
+                "TriggerConds": [
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerCondOnWeatherIdChanged, CombatRoutine",
+                    "DisplayName": "天气变化",
+                    "WeatherId": 3,
+                    "Delay": 0
+                  }
+                ],
+                "NodeType": 2,
+                "Enable": true,
+                "DisplayName": "条件",
+                "Name": ""
+              },
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                "TriggerActions": [
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerActionLockSpell, CombatRoutine",
+                    "SpellId": 20,
+                    "Lock": false,
+                    "DisplayName": "锁定技能"
+                  }
+                ],
+                "NodeType": 2,
+                "Enable": true,
+                "DisplayName": "行为",
+                "Name": "开战逃"
+              },
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                "TriggerActions": [
+                  {
+                    "$type": "Fra.Paladin.Triggers.PLDTriggerActionBlade3, Fra",
+                    "DisplayName": "[PLD]悔罪连开关",
+                    "Blade3": true
+                  }
+                ],
+                "NodeType": 2,
+                "Enable": true,
+                "DisplayName": "行为",
+                "Name": "开大宝剑"
+              },
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerParallel, CombatRoutine",
+                "Childs": [
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+                    "Childs": [
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "延迟[秒]",
+                        "Delay": 1.5,
+                        "Name": ""
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                        "TriggerActions": [
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                            "SpellConfig": {
+                              "Category": 0,
+                              "SpellId": 20,
+                              "TargetType": 1
+                            },
+                            "DisplayName": "使用技能"
+                          }
+                        ],
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "行为",
+                        "Name": "手动战逃"
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+                        "CondLogicType": 0,
+                        "TriggerConds": [
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerCondEnemyCastSpell, CombatRoutine",
+                            "Strs": null,
+                            "RegexNameOrId": "31552",
+                            "DisplayName": "敌人读条使用技能"
+                          }
+                        ],
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "条件",
+                        "Name": "读条防火墙"
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "延迟[秒]",
+                        "Delay": 3.0,
+                        "Name": ""
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                        "TriggerActions": [
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerActionLockSpell, CombatRoutine",
+                            "SpellId": 3538,
+                            "Lock": false,
+                            "DisplayName": "锁定技能"
+                          }
+                        ],
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "行为",
+                        "Name": "开沥血"
+                      }
+                    ],
+                    "NodeType": 1,
+                    "Enable": true,
+                    "DisplayName": "序列",
+                    "Name": "开场双目标"
+                  },
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+                    "Childs": [
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+                        "CondLogicType": 0,
+                        "TriggerConds": [
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerCondEnemyCastSpell, CombatRoutine",
+                            "Strs": null,
+                            "RegexNameOrId": "31551",
+                            "DisplayName": "敌人读条使用技能"
+                          }
+                        ],
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "条件",
+                        "Name": "索尼读条"
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                        "TriggerActions": [
+                          {
+                            "$type": "Fra.Paladin.Triggers.PLDTriggerActionBlade3, Fra",
+                            "DisplayName": "[PLD]悔罪连开关",
+                            "Blade3": false
+                          }
+                        ],
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "行为",
+                        "Name": "锁大宝剑"
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+                        "CondLogicType": 0,
+                        "TriggerConds": [
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerCondEnemyCastSpell, CombatRoutine",
+                            "Strs": null,
+                            "RegexNameOrId": "31544",
+                            "DisplayName": "敌人读条使用技能"
+                          }
+                        ],
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "条件",
+                        "Name": "协作程序LB读条"
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                        "TriggerActions": [
+                          {
+                            "$type": "Fra.Paladin.Triggers.PLDTriggerActionBlade3, Fra",
+                            "DisplayName": "[PLD]悔罪连开关",
+                            "Blade3": true
+                          }
+                        ],
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "行为",
+                        "Name": "开大宝剑"
+                      }
+                    ],
+                    "NodeType": 1,
+                    "Enable": true,
+                    "DisplayName": "序列",
+                    "Name": "索尼后双目标"
+                  }
+                ],
+                "NodeType": 1,
+                "Enable": true,
+                "DisplayName": "并行",
+                "Name": ""
+              }
+            ],
+            "NodeType": 1,
+            "Enable": true,
+            "DisplayName": "序列",
+            "Name": "P2"
+          }
+        ],
+        "NodeType": 1,
+        "Enable": true,
+        "DisplayName": "并行",
+        "Name": ""
+      }
+    ],
+    "NodeType": 0,
+    "Enable": true,
+    "DisplayName": "Start",
+    "Name": ""
+  },
+  "Author": "Fra",
+  "Name": "骑士欧米茄范例",
+  "TerritoryTypeId": 1122,
+  "TargetJob": 19,
+  "ExposedVars": []
+}

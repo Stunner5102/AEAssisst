@@ -1,0 +1,1623 @@
+{
+  "ConfigVersion": 6,
+  "TriggerRoot": {
+    "Childs": [
+      {
+        "$type": "CombatRoutine.TriggerModel.TriggerParallel, CombatRoutine",
+        "Childs": [
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+            "Childs": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerParallel, CombatRoutine",
+                "Childs": [
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+                    "Childs": [
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "延迟[秒]",
+                        "Delay": 72.0,
+                        "Name": "全能之主"
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                        "TriggerActions": [
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                            "SpellConfig": {
+                              "Category": 0,
+                              "SpellId": 16012,
+                              "TargetType": 1
+                            },
+                            "DisplayName": "使用技能"
+                          }
+                        ],
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "行为",
+                        "Name": "桑巴"
+                      }
+                    ],
+                    "NodeType": 1,
+                    "Enable": true,
+                    "DisplayName": "序列",
+                    "Name": "减伤"
+                  },
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+                    "Childs": [
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "延迟[秒]",
+                        "Delay": 75.0,
+                        "Name": ""
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerSelect, CombatRoutine",
+                        "Childs": [
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+                            "Childs": [
+                              {
+                                "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                                "TriggerActions": [
+                                  {
+                                    "$type": "Fra.Dancer.Triggers.DNCTriggerActionStarfallDance_first, Fra",
+                                    "DisplayName": "[DNC]优先流星舞",
+                                    "StarfallDancefirst": true
+                                  },
+                                  {
+                                    "$type": "CombatRoutine.TriggerModel.TriggerActionSwitchAoe, CombatRoutine",
+                                    "UseAoe": false,
+                                    "DisplayName": "切换AOE"
+                                  }
+                                ],
+                                "NodeType": 2,
+                                "Enable": true,
+                                "DisplayName": "行为",
+                                "Name": "流星舞优先级"
+                              },
+                              {
+                                "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                                "TriggerActions": [
+                                  {
+                                    "$type": "CombatRoutine.TriggerModel.TriggerActionLockSpell, CombatRoutine",
+                                    "SpellId": 16004,
+                                    "Lock": true,
+                                    "DisplayName": "锁定技能"
+                                  }
+                                ],
+                                "NodeType": 2,
+                                "Enable": true,
+                                "DisplayName": "行为",
+                                "Name": "锁定大舞结束"
+                              }
+                            ],
+                            "NodeType": 1,
+                            "Enable": true,
+                            "DisplayName": "序列",
+                            "Name": ""
+                          }
+                        ],
+                        "NodeType": 1,
+                        "Enable": true,
+                        "DisplayName": "选择",
+                        "Name": "输出情况"
+                      }
+                    ],
+                    "NodeType": 1,
+                    "Enable": true,
+                    "DisplayName": "序列",
+                    "Name": "控制循环"
+                  }
+                ],
+                "NodeType": 1,
+                "Enable": true,
+                "DisplayName": "并行",
+                "Name": ""
+              }
+            ],
+            "NodeType": 1,
+            "Enable": true,
+            "DisplayName": "序列",
+            "Name": "P1 "
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+            "Childs": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+                "CondLogicType": 0,
+                "TriggerConds": [
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerCondEnemyTtk, CombatRoutine",
+                    "NameOrId": "15708",
+                    "TimeToKill": 1,
+                    "DisplayName": "敌人TTK (几秒内死亡)"
+                  }
+                ],
+                "NodeType": 2,
+                "Enable": true,
+                "DisplayName": "条件",
+                "Name": "蟑螂去世1秒"
+              },
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                "TriggerActions": [
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerActionLockSpell, CombatRoutine",
+                    "SpellId": 16004,
+                    "Lock": false,
+                    "DisplayName": "锁定技能"
+                  }
+                ],
+                "NodeType": 2,
+                "Enable": true,
+                "DisplayName": "行为",
+                "Name": "解鎖大舞结束"
+              }
+            ],
+            "NodeType": 1,
+            "Enable": true,
+            "DisplayName": "序列",
+            "Name": "P1结束"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+            "Childs": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+                "CondLogicType": 0,
+                "TriggerConds": [
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerCondGameLog, CombatRoutine",
+                    "RegexValue": "ワタシはオメガであり",
+                    "DisplayName": "聊天监控"
+                  }
+                ],
+                "NodeType": 2,
+                "Enable": true,
+                "DisplayName": "条件",
+                "Name": "转场"
+              },
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerParallel, CombatRoutine",
+                "Childs": [
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+                    "Childs": [
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "延迟[秒]",
+                        "Delay": 106.0,
+                        "Name": "陨石+宇宙记忆"
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                        "TriggerActions": [
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                            "SpellConfig": {
+                              "Category": 0,
+                              "SpellId": 16012,
+                              "TargetType": 1
+                            },
+                            "DisplayName": "使用技能"
+                          }
+                        ],
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "行为",
+                        "Name": "桑巴"
+                      }
+                    ],
+                    "NodeType": 1,
+                    "Enable": true,
+                    "DisplayName": "序列",
+                    "Name": "减伤"
+                  },
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+                    "Childs": [
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "延迟[秒]",
+                        "Delay": 60.0,
+                        "Name": "击退分摊"
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                        "TriggerActions": [
+                          {
+                            "$type": "Fra.Dancer.Triggers.DNCTriggerActionStarfallDance_first, Fra",
+                            "DisplayName": "[DNC]优先流星舞",
+                            "StarfallDancefirst": false
+                          },
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerActionLockSpell, CombatRoutine",
+                            "SpellId": 25791,
+                            "Lock": true,
+                            "DisplayName": "锁定技能"
+                          }
+                        ],
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "行为",
+                        "Name": "锁定扇舞·终"
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "延迟[秒]",
+                        "Delay": 24.0,
+                        "Name": "贪双目标"
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                        "TriggerActions": [
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                            "SpellConfig": {
+                              "Category": 0,
+                              "SpellId": 25791,
+                              "TargetType": 2
+                            },
+                            "DisplayName": "使用技能"
+                          }
+                        ],
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "行为",
+                        "Name": "使用扇舞·终"
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                        "TriggerActions": [
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerActionLockSpell, CombatRoutine",
+                            "SpellId": 25791,
+                            "Lock": false,
+                            "DisplayName": "锁定技能"
+                          }
+                        ],
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "行为",
+                        "Name": "解鎖扇舞·终"
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "延迟[秒]",
+                        "Delay": 22.0,
+                        "Name": "盾击"
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                        "TriggerActions": [
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerActionSwitchBurst, CombatRoutine",
+                            "Burst": false,
+                            "DisplayName": "切换爆发"
+                          }
+                        ],
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "行为",
+                        "Name": "关爆发"
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "延迟[秒]",
+                        "Delay": 22.0,
+                        "Name": "宇宙記憶"
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                        "TriggerActions": [
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                            "SpellConfig": {
+                              "Category": 0,
+                              "SpellId": 16013,
+                              "TargetType": 1
+                            },
+                            "DisplayName": "使用技能"
+                          }
+                        ],
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "行为",
+                        "Name": "百花"
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "延迟[秒]",
+                        "Delay": 2.5,
+                        "Name": ""
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                        "TriggerActions": [
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                            "SpellConfig": {
+                              "Category": 0,
+                              "SpellId": 25791,
+                              "TargetType": 2
+                            },
+                            "DisplayName": "使用技能"
+                          }
+                        ],
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "行为",
+                        "Name": "使用扇舞·终"
+                      }
+                    ],
+                    "NodeType": 1,
+                    "Enable": true,
+                    "DisplayName": "序列",
+                    "Name": "控制循环"
+                  },
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+                    "Childs": [
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "延迟[秒]",
+                        "Delay": 59.0,
+                        "Name": "击退分摊"
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                        "TriggerActions": [
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                            "SpellConfig": {
+                              "Category": 0,
+                              "SpellId": 15997,
+                              "TargetType": 1
+                            },
+                            "DisplayName": "使用技能"
+                          }
+                        ],
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "行为",
+                        "Name": "击退分摊小舞"
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "延迟[秒]",
+                        "Delay": 40.0,
+                        "Name": "宇宙記憶"
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+                        "Childs": [
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+                            "CondLogicType": 0,
+                            "TriggerConds": [
+                              {
+                                "$type": "CombatRoutine.TriggerModel.TriggerCondBuffLeft, CombatRoutine",
+                                "TimeLeft": 15,
+                                "AuraId": 1001847,
+                                "TargetName": "",
+                                "DisplayName": "buff小于多少秒"
+                              }
+                            ],
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "条件",
+                            "Name": "小舞buff"
+                          },
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                            "TriggerActions": [
+                              {
+                                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                                "SpellConfig": {
+                                  "Category": 0,
+                                  "SpellId": 15997,
+                                  "TargetType": 1
+                                },
+                                "DisplayName": "使用技能"
+                              }
+                            ],
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "行为",
+                            "Name": "小舞"
+                          }
+                        ],
+                        "NodeType": 1,
+                        "Enable": true,
+                        "DisplayName": "序列",
+                        "Name": ""
+                      }
+                    ],
+                    "NodeType": 1,
+                    "Enable": true,
+                    "DisplayName": "序列",
+                    "Name": "控制小舞"
+                  }
+                ],
+                "NodeType": 1,
+                "Enable": true,
+                "DisplayName": "并行",
+                "Name": ""
+              }
+            ],
+            "NodeType": 1,
+            "Enable": true,
+            "DisplayName": "序列",
+            "Name": "P2 单120"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+            "Childs": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+                "CondLogicType": 0,
+                "TriggerConds": [
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerCondGameLog, CombatRoutine",
+                    "RegexValue": "ヒトの姿や行動を模倣することは",
+                    "DisplayName": "聊天监控"
+                  }
+                ],
+                "NodeType": 2,
+                "Enable": true,
+                "DisplayName": "条件",
+                "Name": "转场"
+              },
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+                "Childs": [
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                    "NodeType": 2,
+                    "Enable": true,
+                    "DisplayName": "延迟[秒]",
+                    "Delay": 15.0,
+                    "Name": "第一轮地震结束"
+                  },
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                    "TriggerActions": [
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                        "SpellConfig": {
+                          "Category": 0,
+                          "SpellId": 15997,
+                          "TargetType": 1
+                        },
+                        "DisplayName": "使用技能"
+                      }
+                    ],
+                    "NodeType": 2,
+                    "Enable": true,
+                    "DisplayName": "行为",
+                    "Name": "小舞"
+                  },
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                    "TriggerActions": [
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerActionSwitchBurst, CombatRoutine",
+                        "Burst": true,
+                        "DisplayName": "切换爆发"
+                      }
+                    ],
+                    "NodeType": 2,
+                    "Enable": true,
+                    "DisplayName": "行为",
+                    "Name": "开爆发"
+                  }
+                ],
+                "NodeType": 1,
+                "Enable": true,
+                "DisplayName": "序列",
+                "Name": "控制循环"
+              }
+            ],
+            "NodeType": 1,
+            "Enable": true,
+            "DisplayName": "序列",
+            "Name": "P2.5"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+            "Childs": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+                "CondLogicType": 0,
+                "TriggerConds": [
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerCondGameLog, CombatRoutine",
+                    "RegexValue": "検証は成就した",
+                    "DisplayName": "聊天监控"
+                  }
+                ],
+                "NodeType": 2,
+                "Enable": true,
+                "DisplayName": "条件",
+                "Name": "转场"
+              },
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerParallel, CombatRoutine",
+                "Childs": [
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+                    "Childs": [
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerSelect, CombatRoutine",
+                        "Childs": [
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+                            "Childs": [
+                              {
+                                "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                                "NodeType": 2,
+                                "Enable": true,
+                                "DisplayName": "延迟[秒]",
+                                "Delay": 29.0,
+                                "Name": ""
+                              },
+                              {
+                                "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                                "TriggerActions": [
+                                  {
+                                    "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                                    "SpellConfig": {
+                                      "Category": 0,
+                                      "SpellId": 16012,
+                                      "TargetType": 1
+                                    },
+                                    "DisplayName": "使用技能"
+                                  }
+                                ],
+                                "NodeType": 2,
+                                "Enable": true,
+                                "DisplayName": "行为",
+                                "Name": "桑巴"
+                              }
+                            ],
+                            "NodeType": 1,
+                            "Enable": false,
+                            "DisplayName": "序列",
+                            "Name": "第一次塔交桑巴"
+                          },
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+                            "Childs": [
+                              {
+                                "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                                "NodeType": 2,
+                                "Enable": true,
+                                "DisplayName": "延迟[秒]",
+                                "Delay": 50.0,
+                                "Name": ""
+                              },
+                              {
+                                "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                                "TriggerActions": [
+                                  {
+                                    "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                                    "SpellConfig": {
+                                      "Category": 0,
+                                      "SpellId": 16012,
+                                      "TargetType": 1
+                                    },
+                                    "DisplayName": "使用技能"
+                                  }
+                                ],
+                                "NodeType": 2,
+                                "Enable": true,
+                                "DisplayName": "行为",
+                                "Name": "桑巴"
+                              }
+                            ],
+                            "NodeType": 1,
+                            "Enable": false,
+                            "DisplayName": "序列",
+                            "Name": "第二次塔交桑巴"
+                          },
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+                            "Childs": [
+                              {
+                                "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                                "NodeType": 2,
+                                "Enable": true,
+                                "DisplayName": "延迟[秒]",
+                                "Delay": 71.0,
+                                "Name": ""
+                              },
+                              {
+                                "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                                "TriggerActions": [
+                                  {
+                                    "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                                    "SpellConfig": {
+                                      "Category": 0,
+                                      "SpellId": 16012,
+                                      "TargetType": 1
+                                    },
+                                    "DisplayName": "使用技能"
+                                  }
+                                ],
+                                "NodeType": 2,
+                                "Enable": true,
+                                "DisplayName": "行为",
+                                "Name": "桑巴"
+                              }
+                            ],
+                            "NodeType": 1,
+                            "Enable": true,
+                            "DisplayName": "序列",
+                            "Name": "第三次塔交桑巴"
+                          },
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+                            "Childs": [
+                              {
+                                "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                                "NodeType": 2,
+                                "Enable": true,
+                                "DisplayName": "延迟[秒]",
+                                "Delay": 92.0,
+                                "Name": ""
+                              },
+                              {
+                                "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                                "TriggerActions": [
+                                  {
+                                    "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                                    "SpellConfig": {
+                                      "Category": 0,
+                                      "SpellId": 16012,
+                                      "TargetType": 1
+                                    },
+                                    "DisplayName": "使用技能"
+                                  }
+                                ],
+                                "NodeType": 2,
+                                "Enable": true,
+                                "DisplayName": "行为",
+                                "Name": "桑巴"
+                              }
+                            ],
+                            "NodeType": 1,
+                            "Enable": false,
+                            "DisplayName": "序列",
+                            "Name": "第四次塔交桑巴"
+                          }
+                        ],
+                        "NodeType": 1,
+                        "Enable": true,
+                        "DisplayName": "选择",
+                        "Name": "HW减伤怎么交？"
+                      }
+                    ],
+                    "NodeType": 1,
+                    "Enable": true,
+                    "DisplayName": "序列",
+                    "Name": "减伤"
+                  },
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+                    "Childs": [
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "延迟[秒]",
+                        "Delay": 5.0,
+                        "Name": ""
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                        "TriggerActions": [
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerActionUsePotion, CombatRoutine",
+                            "DisplayName": "使用爆发药"
+                          }
+                        ],
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "行为",
+                        "Name": "爆发药"
+                      }
+                    ],
+                    "NodeType": 1,
+                    "Enable": true,
+                    "DisplayName": "序列",
+                    "Name": "爆发药"
+                  }
+                ],
+                "NodeType": 1,
+                "Enable": true,
+                "DisplayName": "并行",
+                "Name": ""
+              }
+            ],
+            "NodeType": 1,
+            "Enable": true,
+            "DisplayName": "序列",
+            "Name": "P3 双120 "
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+            "Childs": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+                "CondLogicType": 0,
+                "TriggerConds": [
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerCondGameLog, CombatRoutine",
+                    "RegexValue": "なダメージを検知",
+                    "DisplayName": "聊天监控"
+                  }
+                ],
+                "NodeType": 2,
+                "Enable": true,
+                "DisplayName": "条件",
+                "Name": "P3结束"
+              },
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                "TriggerActions": [
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                    "SpellConfig": {
+                      "Category": 0,
+                      "SpellId": 15997,
+                      "TargetType": 1
+                    },
+                    "DisplayName": "使用技能"
+                  }
+                ],
+                "NodeType": 2,
+                "Enable": true,
+                "DisplayName": "行为",
+                "Name": "小舞"
+              }
+            ],
+            "NodeType": 1,
+            "Enable": true,
+            "DisplayName": "序列",
+            "Name": "P3结束"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+            "Childs": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+                "CondLogicType": 0,
+                "TriggerConds": [
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerCondGameLog, CombatRoutine",
+                    "RegexValue": "状態で再起動を行",
+                    "DisplayName": "聊天监控"
+                  }
+                ],
+                "NodeType": 2,
+                "Enable": true,
+                "DisplayName": "条件",
+                "Name": "转场"
+              },
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerParallel, CombatRoutine",
+                "Childs": [
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerSelect, CombatRoutine",
+                    "Childs": [
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+                        "Childs": [
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "延迟[秒]",
+                            "Delay": 21.0,
+                            "Name": ""
+                          },
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                            "TriggerActions": [
+                              {
+                                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                                "SpellConfig": {
+                                  "Category": 0,
+                                  "SpellId": 16012,
+                                  "TargetType": 1
+                                },
+                                "DisplayName": "使用技能"
+                              }
+                            ],
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "行为",
+                            "Name": "桑巴"
+                          }
+                        ],
+                        "NodeType": 1,
+                        "Enable": false,
+                        "DisplayName": "序列",
+                        "Name": "第一次分摊炮后减伤"
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+                        "Childs": [
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "延迟[秒]",
+                            "Delay": 31.0,
+                            "Name": ""
+                          },
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                            "TriggerActions": [
+                              {
+                                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                                "SpellConfig": {
+                                  "Category": 0,
+                                  "SpellId": 16012,
+                                  "TargetType": 1
+                                },
+                                "DisplayName": "使用技能"
+                              }
+                            ],
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "行为",
+                            "Name": "桑巴"
+                          }
+                        ],
+                        "NodeType": 1,
+                        "Enable": false,
+                        "DisplayName": "序列",
+                        "Name": "第二次分摊炮后减伤"
+                      }
+                    ],
+                    "NodeType": 1,
+                    "Enable": true,
+                    "DisplayName": "选择",
+                    "Name": "减伤"
+                  },
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerParallel, CombatRoutine",
+                    "Childs": [
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+                        "Childs": [
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "延迟[秒]",
+                            "Delay": 65.0,
+                            "Name": "P4-P5转场"
+                          },
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                            "TriggerActions": [
+                              {
+                                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                                "SpellConfig": {
+                                  "Category": 0,
+                                  "SpellId": 15997,
+                                  "TargetType": 1
+                                },
+                                "DisplayName": "使用技能"
+                              }
+                            ],
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "行为",
+                            "Name": "小舞"
+                          }
+                        ],
+                        "NodeType": 1,
+                        "Enable": true,
+                        "DisplayName": "序列",
+                        "Name": "P4结束小舞"
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+                        "Childs": [
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "延迟[秒]",
+                            "Delay": 65.0,
+                            "Name": "延迟团辅至一运结束"
+                          },
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                            "TriggerActions": [
+                              {
+                                "$type": "CombatRoutine.TriggerModel.TriggerActionSwitchBurst, CombatRoutine",
+                                "Burst": false,
+                                "DisplayName": "切换爆发"
+                              }
+                            ],
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "行为",
+                            "Name": "关爆发"
+                          },
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "延迟[秒]",
+                            "Delay": 20.0,
+                            "Name": "该打百花啦"
+                          },
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                            "TriggerActions": [
+                              {
+                                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                                "SpellConfig": {
+                                  "Category": 0,
+                                  "SpellId": 16013,
+                                  "TargetType": 1
+                                },
+                                "DisplayName": "使用技能"
+                              }
+                            ],
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "行为",
+                            "Name": "百花"
+                          },
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "延迟[秒]",
+                            "Delay": 2.5,
+                            "Name": "趕緊打个鸟扇吧"
+                          },
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                            "TriggerActions": [
+                              {
+                                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                                "SpellConfig": {
+                                  "Category": 0,
+                                  "SpellId": 25791,
+                                  "TargetType": 2
+                                },
+                                "DisplayName": "使用技能"
+                              }
+                            ],
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "行为",
+                            "Name": "扇舞·终"
+                          }
+                        ],
+                        "NodeType": 1,
+                        "Enable": true,
+                        "DisplayName": "序列",
+                        "Name": "P5"
+                      }
+                    ],
+                    "NodeType": 1,
+                    "Enable": true,
+                    "DisplayName": "并行",
+                    "Name": "控制循环 P5一运前"
+                  }
+                ],
+                "NodeType": 1,
+                "Enable": true,
+                "DisplayName": "并行",
+                "Name": ""
+              }
+            ],
+            "NodeType": 1,
+            "Enable": true,
+            "DisplayName": "序列",
+            "Name": "P4-P5一运前"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+            "Childs": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+                "CondLogicType": 0,
+                "TriggerConds": [
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerCondGameLog, CombatRoutine",
+                    "RegexValue": "この力は、いったい",
+                    "DisplayName": "聊天监控"
+                  }
+                ],
+                "NodeType": 2,
+                "Enable": true,
+                "DisplayName": "条件",
+                "Name": "转场"
+              },
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerParallel, CombatRoutine",
+                "Childs": [
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerParallel, CombatRoutine",
+                    "Childs": [
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+                        "Childs": [
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "延迟[秒]",
+                            "Delay": 11.0,
+                            "Name": ""
+                          },
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                            "TriggerActions": [
+                              {
+                                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                                "SpellConfig": {
+                                  "Category": 0,
+                                  "SpellId": 16012,
+                                  "TargetType": 1
+                                },
+                                "DisplayName": "使用技能"
+                              }
+                            ],
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "行为",
+                            "Name": "桑巴"
+                          }
+                        ],
+                        "NodeType": 1,
+                        "Enable": true,
+                        "DisplayName": "序列",
+                        "Name": "一运前死刑"
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+                        "Childs": [
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "延迟[秒]",
+                            "Delay": 26.0,
+                            "Name": "一运AOE"
+                          },
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                            "TriggerActions": [
+                              {
+                                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                                "SpellConfig": {
+                                  "Category": 0,
+                                  "SpellId": 16012,
+                                  "TargetType": 1
+                                },
+                                "DisplayName": "使用技能"
+                              }
+                            ],
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "行为",
+                            "Name": "桑巴"
+                          }
+                        ],
+                        "NodeType": 1,
+                        "Enable": false,
+                        "DisplayName": "序列",
+                        "Name": "一运AOE"
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+                        "Childs": [
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "延迟[秒]",
+                            "Delay": 103.0,
+                            "Name": "二运aoe"
+                          },
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                            "TriggerActions": [
+                              {
+                                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                                "SpellConfig": {
+                                  "Category": 0,
+                                  "SpellId": 16012,
+                                  "TargetType": 1
+                                },
+                                "DisplayName": "使用技能"
+                              }
+                            ],
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "行为",
+                            "Name": "桑巴"
+                          }
+                        ],
+                        "NodeType": 1,
+                        "Enable": true,
+                        "DisplayName": "序列",
+                        "Name": "二运AOE"
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+                        "Childs": [
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "延迟[秒]",
+                            "Delay": 196.0,
+                            "Name": ""
+                          },
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                            "TriggerActions": [
+                              {
+                                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                                "SpellConfig": {
+                                  "Category": 0,
+                                  "SpellId": 16012,
+                                  "TargetType": 1
+                                },
+                                "DisplayName": "使用技能"
+                              }
+                            ],
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "行为",
+                            "Name": "桑巴"
+                          }
+                        ],
+                        "NodeType": 1,
+                        "Enable": true,
+                        "DisplayName": "序列",
+                        "Name": "三运AOE"
+                      }
+                    ],
+                    "NodeType": 1,
+                    "Enable": true,
+                    "DisplayName": "并行",
+                    "Name": "减伤"
+                  },
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerParallel, CombatRoutine",
+                    "Childs": [
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+                        "Childs": [
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "延迟[秒]",
+                            "Delay": 75.0,
+                            "Name": "一运"
+                          },
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                            "TriggerActions": [
+                              {
+                                "$type": "CombatRoutine.TriggerModel.TriggerActionSwitchBurst, CombatRoutine",
+                                "Burst": false,
+                                "DisplayName": "切换爆发"
+                              }
+                            ],
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "行为",
+                            "Name": "开爆发"
+                          },
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "延迟[秒]",
+                            "Delay": 95.0,
+                            "Name": "二运"
+                          },
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                            "TriggerActions": [
+                              {
+                                "$type": "CombatRoutine.TriggerModel.TriggerActionLockSpell, CombatRoutine",
+                                "SpellId": 16013,
+                                "Lock": true,
+                                "DisplayName": "锁定技能"
+                              }
+                            ],
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "行为",
+                            "Name": "锁定百花进团辅"
+                          },
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "延迟[秒]",
+                            "Delay": 36.0,
+                            "Name": "等待团辅"
+                          },
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                            "TriggerActions": [
+                              {
+                                "$type": "CombatRoutine.TriggerModel.TriggerActionLockSpell, CombatRoutine",
+                                "SpellId": 16013,
+                                "Lock": false,
+                                "DisplayName": "锁定技能"
+                              }
+                            ],
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "行为",
+                            "Name": "解锁百花"
+                          }
+                        ],
+                        "NodeType": 1,
+                        "Enable": true,
+                        "DisplayName": "序列",
+                        "Name": "控制爆发"
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+                        "Childs": [
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "延迟[秒]",
+                            "Delay": 75.0,
+                            "Name": "一运跳小舞"
+                          },
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                            "TriggerActions": [
+                              {
+                                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                                "SpellConfig": {
+                                  "Category": 0,
+                                  "SpellId": 15997,
+                                  "TargetType": 1
+                                },
+                                "DisplayName": "使用技能"
+                              }
+                            ],
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "行为",
+                            "Name": "小舞"
+                          }
+                        ],
+                        "NodeType": 1,
+                        "Enable": true,
+                        "DisplayName": "序列",
+                        "Name": "一运小舞"
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+                        "Childs": [
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "延迟[秒]",
+                            "Delay": 170.0,
+                            "Name": "二运跳小舞"
+                          },
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                            "TriggerActions": [
+                              {
+                                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                                "SpellConfig": {
+                                  "Category": 0,
+                                  "SpellId": 15997,
+                                  "TargetType": 1
+                                },
+                                "DisplayName": "使用技能"
+                              }
+                            ],
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "行为",
+                            "Name": "小舞"
+                          }
+                        ],
+                        "NodeType": 1,
+                        "Enable": true,
+                        "DisplayName": "序列",
+                        "Name": "二运小舞"
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+                        "Childs": [
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "延迟[秒]",
+                            "Delay": 210.0,
+                            "Name": "三运跳小舞"
+                          },
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                            "TriggerActions": [
+                              {
+                                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                                "SpellConfig": {
+                                  "Category": 0,
+                                  "SpellId": 15997,
+                                  "TargetType": 1
+                                },
+                                "DisplayName": "使用技能"
+                              }
+                            ],
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "行为",
+                            "Name": "小舞"
+                          }
+                        ],
+                        "NodeType": 1,
+                        "Enable": true,
+                        "DisplayName": "序列",
+                        "Name": "三运小舞"
+                      }
+                    ],
+                    "NodeType": 1,
+                    "Enable": true,
+                    "DisplayName": "并行",
+                    "Name": "控制循环"
+                  },
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+                    "Childs": [
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "延迟[秒]",
+                        "Delay": 83.0,
+                        "Name": "一运结束"
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                        "TriggerActions": [
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerActionUsePotion, CombatRoutine",
+                            "DisplayName": "使用爆发药"
+                          }
+                        ],
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "行为",
+                        "Name": "爆发药"
+                      }
+                    ],
+                    "NodeType": 1,
+                    "Enable": true,
+                    "DisplayName": "序列",
+                    "Name": "爆发药"
+                  }
+                ],
+                "NodeType": 1,
+                "Enable": true,
+                "DisplayName": "并行",
+                "Name": ""
+              }
+            ],
+            "NodeType": 1,
+            "Enable": true,
+            "DisplayName": "序列",
+            "Name": "P5一运及之后[未测试]"
+          },
+          {
+            "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+            "Childs": [
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerCondNode, CombatRoutine",
+                "CondLogicType": 0,
+                "TriggerConds": [
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerCondGameLog, CombatRoutine",
+                    "RegexValue": "終わりを始まりとし",
+                    "DisplayName": "聊天监控"
+                  }
+                ],
+                "NodeType": 2,
+                "Enable": true,
+                "DisplayName": "条件",
+                "Name": "转场"
+              },
+              {
+                "$type": "CombatRoutine.TriggerModel.TriggerParallel, CombatRoutine",
+                "Childs": [
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerParallel, CombatRoutine",
+                    "Childs": [
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+                        "Childs": [
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "延迟[秒]",
+                            "Delay": 77.0,
+                            "Name": ""
+                          },
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                            "TriggerActions": [
+                              {
+                                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                                "SpellConfig": {
+                                  "Category": 0,
+                                  "SpellId": 16012,
+                                  "TargetType": 2
+                                },
+                                "DisplayName": "使用技能"
+                              }
+                            ],
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "行为",
+                            "Name": "桑巴"
+                          }
+                        ],
+                        "NodeType": 1,
+                        "Enable": true,
+                        "DisplayName": "序列",
+                        "Name": "第一次炮+挡枪"
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+                        "Childs": [
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "延迟[秒]",
+                            "Delay": 178.0,
+                            "Name": ""
+                          },
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                            "TriggerActions": [
+                              {
+                                "$type": "CombatRoutine.TriggerModel.TriggerActionCastSpell, CombatRoutine",
+                                "SpellConfig": {
+                                  "Category": 0,
+                                  "SpellId": 16012,
+                                  "TargetType": 2
+                                },
+                                "DisplayName": "使用技能"
+                              }
+                            ],
+                            "NodeType": 2,
+                            "Enable": true,
+                            "DisplayName": "行为",
+                            "Name": "桑巴"
+                          }
+                        ],
+                        "NodeType": 1,
+                        "Enable": true,
+                        "DisplayName": "序列",
+                        "Name": "陨石"
+                      }
+                    ],
+                    "NodeType": 1,
+                    "Enable": true,
+                    "DisplayName": "并行",
+                    "Name": "减伤"
+                  },
+                  {
+                    "$type": "CombatRoutine.TriggerModel.TriggerSequence, CombatRoutine",
+                    "Childs": [
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "延迟[秒]",
+                        "Delay": 190.0,
+                        "Name": ""
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerDelayNode, CombatRoutine",
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "延迟[秒]",
+                        "Delay": 66.0,
+                        "Name": ""
+                      },
+                      {
+                        "$type": "CombatRoutine.TriggerModel.TriggerActionNode, CombatRoutine",
+                        "TriggerActions": [
+                          {
+                            "$type": "CombatRoutine.TriggerModel.TriggerActionSwitchFinalBurst, CombatRoutine",
+                            "FinalBurst": false,
+                            "DisplayName": "切换最终爆发"
+                          }
+                        ],
+                        "NodeType": 2,
+                        "Enable": true,
+                        "DisplayName": "行为",
+                        "Name": "最终爆发"
+                      }
+                    ],
+                    "NodeType": 1,
+                    "Enable": true,
+                    "DisplayName": "序列",
+                    "Name": "最终爆发"
+                  }
+                ],
+                "NodeType": 1,
+                "Enable": true,
+                "DisplayName": "并行",
+                "Name": ""
+              }
+            ],
+            "NodeType": 1,
+            "Enable": true,
+            "DisplayName": "序列",
+            "Name": "P6[未测试]"
+          }
+        ],
+        "NodeType": 1,
+        "Enable": true,
+        "DisplayName": "并行",
+        "Name": "最终检测绝境战"
+      }
+    ],
+    "NodeType": 0,
+    "Enable": true,
+    "DisplayName": "Start",
+    "Name": ""
+  },
+  "Author": "LintoWilr",
+  "Name": "DNC-OMG [未测试P5一运之后]",
+  "TerritoryTypeId": 1122,
+  "TargetJob": 38,
+  "ExposedVars": []
+}
