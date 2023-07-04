@@ -1,0 +1,27 @@
+[
+  {
+    "Author": "AE",
+    "Name": "AeAssist",
+    "Punchline": "If you know you know.",
+    "Description": "Makes life easier source: trust me bro!",
+    "Changelog": "Added auto update and use url instead.",
+    "Tags": [
+      "plugin",
+      "combat",
+      "utility",
+      "other"
+    ],
+    "InternalName": "AeAssist",
+    "AssemblyVersion": "1.0.0.0",
+    "RepoUrl": "https://github.com/Stunner5102/AEAssisst.git",
+    "ApplicableVersion": "any",
+    "DalamudApiLevel": 8,
+    "DownloadCount": 0,
+    "LastUpdate": 1686496772,
+    "DownloadLinkInstall": "",
+    "DownloadLinkUpdate": "",
+    "DownloadLinkTesting": "",
+    "IconUrl": "",
+    "AcceptsFeedback": true
+  }
+]
