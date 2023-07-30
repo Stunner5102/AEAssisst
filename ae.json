@@ -4,7 +4,7 @@
     "Name": "AeAssist",
     "Punchline": "If you know you know.",
     "Description": "Makes life easier source: trust me bro!",
-    "Changelog": "Added auto update and use url instead.",
+    "Changelog": "* Fixed SAM and added toggles for it.\n* Fixed Potion being used in opener for Fra routine. \n* Added GNB for AnotherOne routine.",
     "Tags": [
       "plugin",
       "combat",
@@ -12,7 +12,7 @@
       "other"
     ],
     "InternalName": "AEAssistLoader",
-    "AssemblyVersion": "1.1.0.0",
+    "AssemblyVersion": "1.2.8.0",
     "RepoUrl": "https://github.com/Stunner5102/AEAssisst.git",
     "ApplicableVersion": "any",
     "DalamudApiLevel": 8,
